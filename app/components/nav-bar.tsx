@@ -10,6 +10,12 @@ export default function NavBar() {
         >
           Home
         </Link>
+        <Link
+          href="/blogs"
+          className="rounded bg-gray-700 px-3 py-2 text-white hover:bg-gray-500"
+        >
+          Nested Layout with Blogs
+        </Link>
       </nav>
     </header>
   )
