@@ -8,7 +8,7 @@ async function fetchNotes() {
   await new Promise((resolve) => setTimeout(resolve, 2000))
   const res = await fetch(`${process.env.url}/rest/v1/notes?select=*`, {
     headers: new Headers({
-      apiKey: process.env.apiKey as string,
+      apikey: process.env.apikey as string,
     }),
   })
   if (!res.ok) {
