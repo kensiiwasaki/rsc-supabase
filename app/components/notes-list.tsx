@@ -11,6 +11,9 @@ async function fetchNotes() {
       apiKey: process.env.apiKey as string,
     }),
   })
+  if (!res.ok) {
+    throw new Error('Failed to fetch data in server')
+  }
 }
 
 export default async function NotesList() {
