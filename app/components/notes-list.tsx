@@ -14,6 +14,8 @@ async function fetchNotes() {
   if (!res.ok) {
     throw new Error('Failed to fetch data in server')
   }
+  const notes: Note[] = await res.json()
+  return notes
 }
 
 export default async function NotesList() {
