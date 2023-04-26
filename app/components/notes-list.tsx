@@ -19,5 +19,6 @@ async function fetchNotes() {
 }
 
 export default async function NotesList() {
+  const notes = await fetchNotes()
   return <div></div>
 }
