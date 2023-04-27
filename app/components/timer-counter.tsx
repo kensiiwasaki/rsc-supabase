@@ -1,8 +1,7 @@
 'use client'
+import { useState, useEffect } from 'react'
 
-import { useEffect, useState } from 'react'
-
-export default function TimeCounter() {
+export default function TimerCounter() {
   const [count, setCount] = useState(0)
   useEffect(() => {
     const timer = setInterval(() => setCount((prevCount) => prevCount + 1), 500)
